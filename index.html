@@ -1,0 +1,491 @@
+<Doctype html>
+  <head>
+      <title>emb-signup</title>
+      <link rel="icon" type="image/x-icon" href="/images/emblogo.jpg">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="style1.css">
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+  </head>
+  <body id="main">
+    <div class="fixed-top" style="background-color:white;">
+      <div width="90%" style="margin-left:2%;"><img src="images/emb_logo.png" ><div style="float:right; padding-top: 1%;padding-right: 2%;">
+       <a href="#"><img src="images/notification.png"></a>
+         <a href="#"> <img src="images/profile.png"></a>
+      </div></div>
+    </div>
+    <div style="margin-top: 4%;">
+      <div id="mySidenav" class="sidenav" >
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <button class="btn btn-secondary form-control" > <a href="index.html">Dashboard</a></button>
+         
+          <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle form-control" style="background-color:cadetblue;color:black;font-size: large;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Pre-Tender
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="estimatedcost.html">Estimated Cost</a>
+                <a class="dropdown-item" href="proposal.html">Proposal</a>
+               <a class="dropdown-item" href="TenderCall.html">Tender Call</a>
+                <a class="dropdown-item" href="WorkOrder.html">Work Order</a>
+                <a class="dropdown-item" href="DefineWork.html">Work Details</a>
+                
+              </div>
+            </div>
+            
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle form-control" style="background-color:cadetblue;color:black;font-size: large;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Contract Management
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="listoftender.html">List of Tenders</a>
+                <a class="dropdown-item" href="assignmentofactivity.html">Assignment of Activity</a>
+                <a class="dropdown-item" href="pgentrydetails.html">PG Entry</a>
+                <a class="dropdown-item" href="pgacceptance.html">PG Acceptance</a>
+                <a class="dropdown-item" href="securitydeposit.html">Security Deposit</a>
+                <a class="dropdown-item" href="agreementpreparation.html">Agreement Preparation</a>
+                <a class="dropdown-item" href="agreementchecking.html">Agreement Checking</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle form-control" style="background-color:cadetblue;color:black;font-size: large;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Measurement
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Measurement Details</a>
+                <a class="dropdown-item" href="#">Abstract of Cost</a>
+                <a class="dropdown-item" href="boq.html">BOQ</a>
+                <a class="dropdown-item" href="inspection.html">Inspection</a>
+                
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle form-control" style="background-color:cadetblue;color:black;font-size: large;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Billing
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="billpreparation.html">Bill Preparation</a>
+                <a class="dropdown-item" href="billverification.html">Bill Processing by engineer</a>
+                <a class="dropdown-item" href="technicalcheck.html">Technical Check</a>
+                <a class="dropdown-item" href="#">Bill Passing by engineer</a>
+                
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle form-control" style="background-color:cadetblue;color:black;font-size: large;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Miscellaneous
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="docextension.html">DOC Extension</a>
+                <a class="dropdown-item" href="#">PG Modification</a>
+                <a class="dropdown-item" href="contractvariation.html">Contract Variation</a>
+                <a class="dropdown-item" href="#">Backlog data(tender)</a>
+                
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle form-control" style="background-color:cadetblue;color:black;font-size: large;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Reports
+              </button>
+              <div class="dropdown-menu" style="font-size:10px;" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="tenderreport.html">Tender Report</a>
+                <a class="dropdown-item" href="contractsreport.html">Contract Report</a>
+                <a class="dropdown-item" href="workreport.html">Work Report</a>
+                <a class="dropdown-item" href="contractbillreport.html">Contract Bill Report</a>
+                <a class="dropdown-item" href="measurementreport.html">Measurement Report</a>
+                <a class="dropdown-item" href="comparativechartreport.html">Comparative Cost <br>Analysis Report</a>
+                
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle form-control" style="background-color:cadetblue;color:black;font-size: large;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Administration
+              </button>
+              <div class="dropdown-menu" style="font-size:10px;" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="mappingtender.html">Mapping of Tender</a>
+                <a class="dropdown-item" href="changepwd.html">Change Password</a>
+                <a class="dropdown-item" href="updateprofile.html">Edit Profile (Self)</a>
+                <a class="dropdown-item" href="createnewuser.html">User Management</a>
+                <a class="dropdown-item" href="adminlogindetail.html">User Login Details</a>
+                <button class="btn btn-secondary dropdown-toggle form-control"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Master</button>
+                  <div class="dropdown-menu" style="font-size:10px;" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="adminmasterdpt.html">Department</a>
+                    <a class="dropdown-item" href="adminmasteruserrole.html">User Role</a>
+                    <a class="dropdown-item" href="adminmasterzone.html">Zone / Ward</a>
+                    <a class="dropdown-item" href="adminmasterunit.html">Unit</a></div>
+                <a class="dropdown-item" href="#">Bank Details</a>
+              </div>
+            </div>
+            <button class="btn btn-secondary form-control" >   <a href="login1.html">Login</a></button>
+        </div>
+        <div style="background-color: #006379; width:100%; border-radius: 5px;">
+        <span style="font-size:30px;cursor:pointer;     color: white;
+        margin-left: 13px;" onclick="openNav()">&#9776; </span>
+      </div>    <div  style="margin:3%;">
+<center><h1>Ongoing Construction Project Progress Tracking Dashboard</h1></center>
+
+<div style="display:flex; margin:5px;">
+
+<div class="card" style="background-color: #80DEEA; border-radius: 10px;margin:5px;width: 18rem;">
+  <div class="card-body">
+   <h3 class="card-title">Number of Project</h3>
+  
+   
+     
+    <form class="form-inline">
+     
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-success my-2 my-sm-0 " data-toggle="modal" data-target="#myModal">
+  View all
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <h4 class="modal-title" id="myModalLabel">Number of Project</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" style="background-color: #2D5F99; color:#ffffff;">Sr. No.</th>
+              <th scope="col" style="background-color: #2D5F99; color:#ffffff;">Tender Name </th>
+              <th scope="col" style="background-color: #2D5F99; color:#ffffff;">Organization</th>
+              <th scope="col" style="background-color: #2D5F99; color:#ffffff;">Total Cost (In Lakh INR)</th>
+              <th scope="col" style="background-color: #2D5F99; color:#ffffff;">Status</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">1</td>
+              <td>Road Construciton</td>
+              <td>MSSPL</td>
+              <td>50</td>
+              <td>Upcoming</td>
+              
+            </tr>
+            <tr>
+              <td scope="row">2</td>
+              <td>Building Construciton</td>
+              <td>MSSPL</td>
+              <td>35</td>
+              <td>Ongoing</td>
+              
+            </tr>
+            <tr>
+              <td scope="row">3</td>
+              <td>Digital Library</td>
+              <td>MSSPL</td>
+              <td>65</td>
+              <td>Completed</td>
+              
+            </tr>
+            <tr>
+              <td scope="row">4</td>
+              <td>Camera Set up</td>
+              <td>MSSPL </td>
+              <td>32.7</td>
+              <td>Completed</td>
+             
+            </tr>
+            <tr>
+              <td scope="row">5</td>
+              <td>Measurement Matrix</td>
+              <td>MSSPL </td>
+              <td>89</td>
+              <td>Ongoing</td>
+              
+            </tr>
+            <tr>
+              <td scope="row">6</td>
+              <td>Smart City App</td>
+              <td> MSSPL</td>
+              <td>40</td>
+              <td>Completed</td>
+             
+            </tr>
+            <tr>
+              <td scope="row">7</td>
+              <td>Software</td>
+              <td>MSSPl </td>
+              <td>55</td>
+              <td>Ongoing</td>
+            
+            </tr>
+           
+          </tbody>
+        </table> 
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button  type="button" class="btn btn-primary">Download</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </form> 
+  
+</div>
+</div>
+
+<div class="card" style="background-color: #00ACC1; border-radius: 10px;margin:5px;width: 18rem;" >
+  <div class="card-body">
+   <h3 class="card-title">Request For Approval</h3>
+   <form class="form-inline">
+     
+    <button type="button" class="btn btn-outline-success my-2 my-sm-" data-toggle="modal" data-target="#myModal">
+      View all
+    </button>
+  </form>
+  </div></div>
+  <div class="card" style="background-color: #80DEEA; border-radius: 10px;margin:5px;width: 18rem;">
+    <div class="card-body">
+     <h3 class="card-title">Ongoing Projects</h3>
+     <form class="form-inline">
+     
+      <button type="button" class="btn btn-outline-success my-2 my-sm-" data-toggle="modal" data-target="#myModal">
+        View all
+      </button>
+        </form>
+    </div></div>
+    <div class="card" style="background-color: #00ACC1; border-radius: 10px;margin:5px;width: 18rem;">
+      <div class="card-body">
+       <h3 class="card-title">Tender To Be Awarded</h3><br>
+       <form class="form-inline">
+     
+        <button type="button" class="btn btn-outline-success my-2 my-sm-" data-toggle="modal" data-target="#myModal">
+          View all
+        </button>
+          </form>
+      </div></div>
+      <div class="card" style="background-color: #80DEEA; border-radius: 10px;margin:5px;width: 18rem;">
+        <div class="card-body">
+         <h3 class="card-title">Tender Cancelled</h3><br>
+         <form class="form-inline" >
+     
+          <button type="button" class="btn btn-outline-success my-2 my-sm-" data-toggle="modal" data-target="#myModal">
+            View all
+          </button>
+            </form>
+        </div></div>
+       </div>
+      
+      <div style="display:flex; margin:5px;">
+ <div class="card" style="background-color: #00ACC1; border-radius: 10px;margin:5px;width: 18rem;">
+          <div class="card-body">
+           <h3 class="card-title">Project Execution Not started</h3>
+          
+          
+             
+            <form class="form-inline">
+          <!--  <input class="form-control mr-sm-2" type="search" placeholder="Search Tender No." aria-label="Search">-->
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">View all</button>
+            </form>
+        
+        </div>
+        </div>
+        <div class="card" style="background-color: #80DEEA; border-radius: 10px;margin:5px;width: 18rem;" >
+          <div class="card-body">
+           <h3 class="card-title">Project Execution Paused</h3>
+           <form class="form-inline">
+     
+            <button type="button" class="btn btn-outline-success my-2 my-sm-" data-toggle="modal" data-target="#myModal">
+              View all
+            </button>
+              </form>
+          </div></div>
+          <div class="card" style="background-color: #00ACC1; border-radius: 10px;margin:5px;width: 18rem;">
+            <div class="card-body">
+             <h3 class="card-title">Measurement Completed</h3>
+             <form class="form-inline">
+     
+              <button type="button" class="btn btn-outline-success my-2 my-sm-" data-toggle="modal" data-target="#myModal">
+                View all
+              </button>
+                </form>
+            </div></div>
+            <div class="card" style="background-color: #80DEEA; border-radius: 10px;margin:5px;width: 18rem;">
+              <div class="card-body">
+               <h3 class="card-title">Billing Done</h3><br>
+               <form class="form-inline">
+     
+                <button type="button" class="btn btn-outline-success my-2 my-sm-" data-toggle="modal" data-target="#myModal">
+                  View all
+                </button>
+                  </form>
+              </div></div>
+              <div class="card" style="background-color: #00ACC1; border-radius: 10px;margin:5px;width: 18rem;">
+                <div class="card-body">
+                 <h3 class="card-title">Billing Rejected</h3><br>
+                 <form class="form-inline">
+     
+                  <button type="button" class="btn btn-outline-success my-2 my-sm-" data-toggle="modal" data-target="#myModal">
+                    View all
+                  </button>
+                    </form>
+                </div></div>
+              
+              </div>
+
+              
+    <!--  <div style="margin:3%; border:1cm; border-radius: 10px; background-color: #F7F9FB;">
+      <div style="font-size: 25px;">Traffic By Location</div>
+      <div style="margin:1%;">Projects
+      <div class="progress" style="height:30px;">
+        
+        
+        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+      </div></div>
+      <div style="margin:1%;">Requests/Days
+      <div class="progress" style="height:30px;">
+       
+        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+      </div></div>
+      <div style="margin:1%;">Users
+      <div class="progress" style="height:30px;">
+        
+        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+      </div></div>
+      <div style="margin:1%;">Users
+      <div class="progress" style="height:30px;">
+       
+        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+      </div></div>
+    </div>-->
+    <div class="card" style="background-color: #edeff1; border-radius: 10px;margin-top:2%;margin-bottom:2%;display: grid;gap:10px;align-content: space-evenly;grid-template-columns: auto auto;">
+      <div class="card-body">
+        <canvas id="myChart" style="width:100%;max-width:550px"></canvas>
+      </div>
+      <div class="card-body">
+        <canvas id="barChart" style="width:100%;max-width:650px;height:100%;margin-top:15%;font-size:20px;"></canvas>
+      </div>
+    </div>
+    
+    <div class="maggi5">
+    <div class="maggi4">
+          <h3> Web Info</h3>
+           <div><a href="#" style="text-decoration: none;  color: inherit;">Term of use</a></div>
+           <div><a href="#" style="text-decoration: none;  color: inherit; " >Website Policies</a></div>
+           <div><a href="#" style="text-decoration: none;  color: inherit;">Document Help</a></div>
+           <div><a href="#" style="text-decoration: none;  color: inherit;">Site Map</a></div>
+
+    </div>
+    <div class="maggi4">
+        <h3>About e-MB</h3>
+        <div><a href="#" style="text-decoration: none;  color: inherit;" >Introduction to e-MB</a></div>
+        <div><a href="#" style="text-decoration: none;  color: inherit;">Stalistics</a></div>
+        <div><a href="#" style="text-decoration: none;  color: inherit;">Right to Information</a></div>
+        <div><a href="#" style="text-decoration: none;  color: inherit;">Analytics</a></div>
+    </div>
+    <div class="maggi4">
+        <h3>News & Events</h3>
+        <div><a href="#" style="text-decoration: none;  color: inherit;">News-room</a></div>
+        <div><a href="#" style="text-decoration: none;  color: inherit;">Gallery</a></div>
+        <div><a href="#" style="text-decoration: none;  color: inherit;">Notification</a></div>
+        <div><a href="#" style="text-decoration: none;  color: inherit;">forms</a></div>
+    </div>
+    <div class="maggi4">
+        <h3>Training</h3>
+        <div><a href="#" style="text-decoration: none;  color: inherit;">LMS</a></div>
+        <div><a href="#" style="text-decoration: none;  color: inherit;">Traning calender</a></div>
+        <div><a href="#" style="text-decoration: none;  color: inherit;">Traning module</a></div>
+        <div><a href="#" style="text-decoration: none;  color: inherit;">Download e-MB logo</a></div>
+    </div>
+</div></div>
+    <div style="display:flex; background-color: aliceblue;" class="fixed-bottom">
+<div style="margin-left:1%;">
+    2022 Contact us -+91 22 61011756 | Terms & Conditions | Email ID-test123@gmail.com
+</div>
+<div style="margin-left:45%;">
+    <img src="images/whatsapp.png">
+    <img src="images/facebook.png"> 
+    <img src = "images/Linkedin.png">
+    <img src = "images/twitter.png">
+</div></div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+ 
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+    </script>
+<script>
+  $(function () {
+  $('.example-popover').popover({
+    container: 'body'
+  })
+})
+</script>
+<script>
+  var xValues = ["Tender Ongoing", "Tender Completed", "Cancelled Tender", "Upcoming Tender", "Tender Cost (in Lakh INR) > "];
+  var yValues = [55, 49, 2, 24, 5];
+  var barColors = [
+    "#b91d47",
+    "#00aba9",
+    "#2b5797",
+    "#e8c3b9",
+    "#1e7145"
+  ];
+  
+  new Chart("myChart", {
+    type: "doughnut",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "Post Tender Performance in 2023"
+      }
+    }
+  });
+  </script>
+<script>
+  var xValues = ["Tender Allocated ", "Proposal Initiated", "Proposal Approved", "Project Started", "Delay Project"];
+  var yValues = [55, 49, 44, 24, 15];
+  var barColors = ["red", "green","blue","orange","brown"];
+  
+  new Chart("barChart", {
+    type: "bar",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      legend: {display: false},
+      title: {
+        display: true,
+        text: "Pre Tender Performance in 2023"
+        
+      }
+    }
+  });
+  </script>
+</body>
+</html>

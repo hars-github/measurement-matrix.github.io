@@ -1,0 +1,146 @@
+.sky01 {
+    background-color: rgb(45, 99, 146);
+    font-size:large;
+    text-align: right;
+    box-shadow: 0px 0px 10px  rgb(217, 0, 0);
+    height:30px;
+    width:100%;
+    margin-top: 10px;
+    outline:none;
+    border-radius: 5px;
+}
+
+
+
+.sky02 {
+    background-color: rgb(181, 200, 181);
+    box-shadow: 0px 0px 10px  rgb(28, 89, 115);
+    font-style: italic;
+    font-size: 1cm;
+    width:100%;
+    
+}
+
+
+ 
+.sky05 {
+    display:flex;
+    justify-content: space-around;
+}
+
+.sky06 {
+    width:45%
+    
+}
+
+.sky07 {
+    background-color: rgb(150, 209, 226);
+    border-radius: 5px;
+    height: 100%;
+    width: 55%;
+    margin-right: 53px;
+    
+}
+
+.form-box{
+    height: 500px;
+    width: 400px;
+    position: relative;
+    margin:50px auto;
+    background: rgb(224, 224, 202);
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+    font-family: cursive;font-size: small;
+}
+.button-box{
+    width: 220px;
+    margin: 20px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #cda36c;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding-top: 17px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    cursor:pointer;
+    background: transparent;
+    border: 0;
+    outline:none;
+    position: relative;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 12px;
+    
+}
+#btn{
+    top: 3px;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 90%;
+    background: linear-gradient(to right, #752204, #f3a915);
+    border-radius: 30px;
+    transition: .5s;
+}
+.social-icons{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+.social-icons img{
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #773821;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.input-group{
+    align-content: center;
+    top: 180px;
+    position: absolute;
+    width: 180px;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 15px 30px;
+    margin: 10px 60px;
+    border-left: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 1px solid#999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor:pointer;
+    display:block;
+    margin-left: 55%;
+    margin-top: 30px;
+    background: linear-gradient(to right, #752204, #f3a915);
+    border:0;
+    outline: none;
+    border-radius: 30px;
+    font-weight: bolder; font-family: cursive;
+    
+}
+.check-box{
+    margin-top: 50px ;
+    margin-left: 20px;
+}
+#Login{
+    left: 50px;
+}
+#Register{
+    left: 450px;
+}
+#Register{
+    margin: 0 ;
+    padding: 0;
+}

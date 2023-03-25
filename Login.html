@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <title>
+e-mb
+    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+
+  <div class="sky01">
+   Support: +91-22-61011756 / help@mssplonline.com
+    </div>
+    <br>
+    
+    <div class="sky02" align="center">
+        Login e-MB<br>(Tender Management By MSSPL)
+    </div>
+   
+    <br><br>
+    <div class="sky05">
+        <div class="sky06"><img src="images/login.png" width="600" height="620"></div>
+        <div class="sky07">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button"class="toggle-btn" onclick="Login()"><centre>Contractor</centre></button>&nbsp;
+                    <button type="button"class="toggle-btn" onclick="Register()">Organisation</button>
+                </div>
+                <div class="social-icons">
+                    <img src="images/GEM.png">
+                    <img src="images/aa01.png">
+                    <img src="images/knn.jpg">
+            </div>
+            <form id="Login" class="input-group">
+                <input type="text" class="input-field" placeholder="Contractor Id" name="Contractor Id"  required>
+                <input type="text" class="input-field" placeholder="Enter Password" name="password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form id="Register" class="input-group">
+                <input type="text" class="input-field" placeholder="Admin Id" required>
+                <input type="text" class="input-field" placeholder="E-mail Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Terms & Conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+            </div>
+            <small>If you have no account then please<a href="Signup.html"> Signup</a></small>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById("Login");
+        var y=document.getElementById("Register");
+        var z=document.getElementById("btn");
+        function Register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function Login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0";
+        }
+</script>
+</body>
+</html>
